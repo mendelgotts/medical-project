@@ -1,0 +1,28 @@
+body {
+  background-color: #d1622f;
+  color: white;
+}
+
+.navigation .nav-list {
+  list-style: none;
+}
+.navigation .nav-list .nav-list_item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #1cdce3;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.navigation .nav-list .nav-list_item:hover {
+  background-color: black;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

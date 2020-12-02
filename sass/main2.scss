@@ -1,0 +1,40 @@
+$color-primary: #d1622f;
+$color-secondary: #1cdce3;
+$color-black: black;
+$color-white: white;
+body {
+  background-color: $color-primary;
+  color: white;
+}
+
+
+@mixin coolBorder($borderColor){
+  border: 1px solid $borderColor ;
+  border-radius: 5px;
+}
+
+.navigation{
+  .nav-list{
+    list-style: none;
+    .nav-list_item{
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      background-color: $color-secondary;
+
+      @include coolBorder ($color-black);
+
+      &:hover{
+        background-color:$color-black;
+      }
+    }
+  }
+}
+
+
+
+.box {
+  height: 100px;
+  width: 100px;
+  @include coolBorder(green);
+}
